@@ -3,77 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/logo/logo.png" />
-    <title>DragonStore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <title>Document</title>
 </head>
 <body>
-    <main>
-        @yield('content')
-    </main>
-
-    <div class="boxmae">
-    <div class="barranav">
-        <img src="assets/logo/logo.png" alt="" class="logo">
-        <input class="botoes" type="submit" value="Boxes">
-        <input class="botoes" type="submit" value="Dados">
-        <input class="botoes" type="submit" value="Grids de Batalha">
-        <input class="botoes" type="submit" value="Livros">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Transportes Madureira</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Caminhões</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+      
     </div>
-    <div class="itens">
-        <img src="assets/etc/carrinho.png" alt="" class="img">
-   </div>
-   <div class="itens">
-        <img src="assets/etc/usua.png" alt="" class="img">
-   </div>
-   </div>
+  </div>
+</nav>
 
 </body>
 </html>
-<style type="text/css">
-    body {
-    background-color: #2f2f2f;
-}
-.barranav{
-    width: 60%;
-    height: 20%;
-    margin-left:15%;
-    background-color: #7B7B7B;
-    border-radius:100px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.menu{
-    width: 7%;
-    
-}
-.botoes{
-    background-color: #7B7B7B;
-    font-family: "Laila", serif;
-    font-weight: 300;
-    margin: 10px;
-    font-size:20px;
-    border: none;
-}
-.boxmae{
-    height: 20%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-.itens{
-
-}
-.img{
-    width: 50px;
-    height: auto;
-}
-.logo{
-    width: 50px;
-    border-radius: 100px;
-}
-</style>
