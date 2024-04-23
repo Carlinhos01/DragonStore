@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -17,13 +16,14 @@ class ClienteController extends Controller
     }
 
     public function cadClie(Request $request){
-        $dadosValidos = $request-> validate([
+        // dd($request);
+        $dadosValidos = $request->validate([
             'nome' => 'string|required',
             'email' => 'string|required',
             'fone' => 'string|required'
         ]);
-
-        cliente::create($dadosValidos);
-        return view("home");
+        // dd($dadosValidos);
+        Cliente::Create($dadosValidos);
+        return view("contratoservic");
     }
 }
